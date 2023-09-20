@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap");
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.navContainer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.navBubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 40px;
+  background-color: #ceebd2;
+  border-radius: 0.25rem;
+  transition: 0.1s ease-in-out;
+}
+
+a:active,
+a:focus {
+  outline: none;
+  outline-style: none;
+  border: none;
+}
+
+.navBubble:hover {
+  background-color: #d9f4dd;
+}
+
+.landingContainer {
+  max-width: 1440px;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textTitle {
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.paraTitle {
+  text-align: center;
+  min-width: 150px;
+  width: 650px;
+}
+
+.containerButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.buttonLandingStroke {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 0.25rem;
+  border: 2px solid #ceebd2;
+}
+
+.buttonLandingFill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 0.25rem;
+  background-color: #ceebd2;
+}
+
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1280px;
+  padding: 4.5rem 0 6rem;
+  margin: 0 auto;
+}
+
+.textAbout {
+  font-size: 2.25rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.paraAbout {
+  width: 600px;
+  font-size: 17px;
+}
+
+/* Footer */
+.footerContainer {
+  background-color: #ceebd2;
+  padding: 0.5rem 0;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.textFooter {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.connectContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.textConnectContainer {
+  line-height: 2.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.ant-btn {
+  color: #000;
+  background-color: #ceebd2;
+  border-radius: 0.25rem;
+  width: 200px;
+  height: 40px;
+  box-shadow: none;
+}
+
+.ant-row {
+  width: 600px;
+}
+
+:where(.css-dev-only-do-not-override-1vr7spz).ant-btn-primary:not(
+    :disabled
+  ):not(.ant-btn-disabled):hover {
+  background-color: #d9f4dd;
+  color: black;
+}
+
+/* chat css */
+
+.uiContainerBackground {
+  width: 1440px;
+  height: 1000px;
+  border-radius: 0.5rem;
+  background-color: #ceebd284;
+}
+
+.containerBackground {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
